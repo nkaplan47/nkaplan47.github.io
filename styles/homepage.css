@@ -1,0 +1,16 @@
+.logo
+{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+}
+#oliveImg:hover:after 
+{
+    content: url(../images/olive.jpg);
+    display: block;
+	height: 20%;
+	width: 10%;
+    position: absolute;
+    left: 700px;  /*change this value to one that suits you */
+    top: -80px;  /*change this value to one that suits you */
+}
