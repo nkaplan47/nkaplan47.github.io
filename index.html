@@ -1,8 +1,85 @@
 <!DOCTYPE html>
 <html>
+<title>Nick Kaplan Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/homepage.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url("./images/homepage.jpg");
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
 <body>
 
-	<h1>Hello World!</h1>
-	
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="logo">
+    <h1>Oh Hai, I'm Nick.</h1>
+	<h2>Software Engineer by day,<br>Human by night</h2>
+  </div>
+  <div class="w3-display-topright w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('about').style.display='block'" class="w3-button w3-black">About Me</button></p>
+	<p><button onclick="document.getElementById('work').style.display='block'" class="w3-button w3-black">Work</button></p>
+    <p><button onclick="document.getElementById('projects').style.display='block'" class="w3-button w3-black">Personal Projects</button></p>
+	<p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">Contact Me</button></p>
+  </div>
+</div>
+
+<!-- About Modal -->
+<div id="about" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('about').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>About Me</h1>
+    </div>
+    <div class="w3-container">
+		<p>What's going on world? My name's Nick Kaplan and I am a 24 year old Software Engineer living in the SW suburbs of Minneapolis.</p>
+		<p>In my free time you'll find me playing basketball, playing videogames, or playing with my pup Olive. <span id="oliveImg">(Don't worry I have a pic)</span></p>
+		<p>I grew up in a small town in southern Minnesota called Elysian, and attended high school in the neighboring town of Waterville. There I played 
+		   a bunch of sports, acted in a few plays, and met some life-long friends.</p>
+		<p>After high school I decided to go to Duluth to the College Of St. Scholastica to study Computer Sciences. While at college I continued to play football and run-in
+		   track. I also met my current girlfriend Nikki and met some more life-long friends.  In 2017, I graduated with a Bachelors in Computer Sciences, with
+		   a douple concentration in Software Engineering and Business Management. Look how happy I am! </p>
+		<p>For a more in depth look at my education you can navigate to the page <a href="#" onclick="document.getElementById('school').style.display='block';document.getElementById('about').style.display='none'">here</a></p>
+		<p>Now that you know a little about my personal life, you can find more information about my job as a software engineer 
+		   <a href="#" onclick="document.getElementById('work').style.display='block';document.getElementById('about').style.display='none'">here.</a>
+		</p>
+		<p>If you're interested in contacting me for professional reasons, click 
+		   <a href="#" onclick="document.getElementById('contact').style.display='block';document.getElementById('about').style.display='none'">here.</a>
+		</p>
+    </div>
+  </div>
+</div>
+
+<!-- Work Modal -->
+<div id="work" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('work').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Current Work</h1>
+    </div>
+    <div class="w3-container">
+		<p>I am currently working at a Power Systems Software company called Open Systems International Inc., which specializes in software 
+		   used to manage and optimize utility systems in all facets of the industry. (Shameless plug <a href="https://www.osii.com/" target="_blank">here</a>)</p>
+		<p>I work on the GIS extracts team, and I could write paragraphs trying to explain what we do, but essentially we convert the various
+		   input data types of our customers into the data format that can be imported into our software.</p>
+		<p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+  </div>
+</div>
+
 </body>
 </html>
+
