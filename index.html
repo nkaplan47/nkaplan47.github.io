@@ -26,7 +26,7 @@ body, html {height: 100%}
   <div class="w3-display-topright w3-container w3-xlarge">
     <p><button onclick="document.getElementById('about').style.display='block'" class="w3-button w3-black">About Me</button></p>
 	<p><button onclick="document.getElementById('work').style.display='block'" class="w3-button w3-black">Work</button></p>
-    <p><button onclick="document.getElementById('projects').style.display='block'" class="w3-button w3-black">Personal Projects</button></p>
+    <!--<p><button onclick="document.getElementById('projects').style.display='block'" class="w3-button w3-black">Personal Projects</button></p>-->
 	<p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">Contact Me</button></p>
   </div>
 </div>
@@ -39,14 +39,14 @@ body, html {height: 100%}
       <h1>About Me</h1>
     </div>
     <div class="w3-container">
-		<p>What's going on world? My name's Nick Kaplan and I am a 24 year old Software Engineer living in the SW suburbs of Minneapolis.</p>
+		<p>Hello there! My name is Nick Kaplan and I am a 24 year old Software Engineer living in the SW suburbs of Minneapolis.</p>
 		<p>In my free time you'll find me playing basketball, playing videogames, or playing with my pup Olive. <span id="oliveImg">(Don't worry I have a pic)</span></p>
 		<p>I grew up in a small town in southern Minnesota called Elysian, and attended high school in the neighboring town of Waterville. There I played 
 		   a bunch of sports, acted in a few plays, and met some life-long friends.</p>
 		<p>After high school I decided to go to Duluth to the College Of St. Scholastica to study Computer Sciences. While at college I continued to play football and run-in
 		   track. I also met my current girlfriend Nikki and met some more life-long friends.  In 2017, I graduated with a Bachelors in Computer Sciences, with
-		   a douple concentration in Software Engineering and Business Management. Look how happy I am! </p>
-		<p>For a more in depth look at my education you can navigate to the page <a href="#" onclick="document.getElementById('school').style.display='block';document.getElementById('about').style.display='none'">here</a></p>
+		   a douple concentration in Software Engineering and Business Management.</p>
+		<!--<p>For a more in depth look at my education you can navigate to the page <a href="#" onclick="document.getElementById('school').style.display='block';document.getElementById('about').style.display='none'">here</a></p>-->
 		<p>Now that you know a little about my personal life, you can find more information about my job as a software engineer 
 		   <a href="#" onclick="document.getElementById('work').style.display='block';document.getElementById('about').style.display='none'">here.</a>
 		</p>
@@ -66,10 +66,18 @@ body, html {height: 100%}
     </div>
     <div class="w3-container">
 		<p>I am currently working at a Power Systems Software company called Open Systems International Inc., which specializes in software 
-		   used to manage and optimize utility systems in all facets of the industry. (Shameless plug <a href="https://www.osii.com/" target="_blank">here</a>)</p>
-		<p>I work on the GIS extracts team, and I could write paragraphs trying to explain what we do, but essentially we convert the various
-		   input data types of our customers into the data format that can be imported into our software.</p>
-		<p>
+		   used to manage and optimize utility systems in all facets of the industry. 
+		   (Link to company website <a href="https://www.osii.com/" target="_blank">here</a>)</p>
+		<p>My work at the company varies from week to week, but a majority of work is done on the GIS(Geographic Information System) Extracts team.
+		   We specialize in converting the data from our new customer into an intermediate format that can be used within our software to represent
+		   their electric data model.</p>
+		<p>Another application I work on is a tool called Arrow that check standards laid out by our System Engineers. The tool can be 
+		   deployed to multiple remote servers(windows or linux) and perform checks ranging from running local processes, to confirming 
+		   databases are correctly configured.</p>
+		<p>I am also in charge of improvement and maintenance of what we called our Standards Website. It is a resource for our Project Engineers
+		   to give them a central location to view standards for our systems. The website is written is cshtml and implements an MVC design.  It also
+		   uses a Microsoft SQL Server to store and add data for the website.</p>
+		<p>There are many other things I touch at OSI and I develop in multiple languages, so there is never a lack of variety!</p>
     </div>
   </div>
 </div>
@@ -77,6 +85,14 @@ body, html {height: 100%}
 <!-- Contact Modal -->
 <div id="contact" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
+	<div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact Information</h1>
+    </div>
+    <div class="w3-container">
+		<h4>Email - nkaplan@css.edu</h4>
+		<h4>Phone - (507)351-4901</h4>
+    </div>
   </div>
 </div>
 
